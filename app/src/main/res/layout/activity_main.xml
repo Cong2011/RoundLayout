@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <cn.cong.view.RoundLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:radius="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/flow"
+        app:layout_constraintEnd_toEndOf="@id/flow"
+        app:layout_constraintStart_toStartOf="@id/flow"
+        app:layout_constraintTop_toTopOf="@id/flow">
+
+        <View
+            android:id="@+id/v_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_launcher" />
+    </cn.cong.view.RoundLayout>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="30dp"
+        app:constraint_referenced_ids="v1,v2,v3,v4"
+        app:flow_horizontalGap="20dp"
+        app:flow_maxElementsWrap="2"
+        app:flow_verticalGap="15dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <cn.cong.view.RoundLayout
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:bottomRightRadius="30dp"
+        android:topLeftRadius="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00F"
+            android:padding="16dp"
+            android:text="Hello World!"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </cn.cong.view.RoundLayout>
+
+    <cn.cong.view.RoundLayout
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:bottomLeftRadius="30dp"
+        android:topRightRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0F0"
+            android:padding="16dp"
+            android:text="Hello World!"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </cn.cong.view.RoundLayout>
+
+    <cn.cong.view.RoundLayout
+        android:id="@+id/v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:bottomLeftRadius="20dp"
+        android:topRightRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:padding="16dp"
+            android:text="Hello World!"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </cn.cong.view.RoundLayout>
+
+    <cn.cong.view.RoundLayout
+        android:id="@+id/v4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:bottomRightRadius="30dp"
+        android:topLeftRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0FF"
+            android:padding="16dp"
+            android:text="Hello World!"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </cn.cong.view.RoundLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
