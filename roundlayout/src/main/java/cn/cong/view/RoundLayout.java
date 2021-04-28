@@ -47,6 +47,7 @@ public class RoundLayout extends FrameLayout {
         this.radii[5] = rb;
         this.radii[6] = lb;
         this.radii[7] = lb;
+        invalidate();
     }
 
     public void setRadius(int radius) {

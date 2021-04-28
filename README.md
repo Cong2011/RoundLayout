@@ -17,7 +17,14 @@ Step 2. Add the dependency
 	        implementation 'com.github.Cong2011:RoundLayout:版本号'
 	}
 
-## 说明：
+## 使用说明：
+1、按上述步骤添加依赖，版本号看本文件顶部jitpack图标
+
+2、当作FrameLayout使用（即：在layout/xml布局文件中，将需要设置圆角的控件，用RoundLayout布局包裹）
+
+3、使用属性android:???Radius等、或代码setRadius(int)等方式设置圆角
+
+## 其它说明：
 1、极轻量
 
 2、兼容Support、AndroidX，minSDK == 18

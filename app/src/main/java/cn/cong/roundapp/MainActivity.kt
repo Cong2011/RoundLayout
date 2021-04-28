@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
+// Kotlin测试代码，仅显示圆角效果；Java同理
 class MainActivity : AppCompatActivity(), View.OnTouchListener {
     private var downX = 0F
     override fun onCreate(savedInstanceState: Bundle?) {
